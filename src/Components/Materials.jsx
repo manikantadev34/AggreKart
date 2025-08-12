@@ -68,37 +68,37 @@ export default function Materials() {
             </h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 pb-6">
-                {products.map((pro) => (
+                {products.map((product) => (
                     <div
-                        key={pro.id}
+                        key={product.id}
                         className="rounded-2xl shadow-md hover:shadow-xl transition bg-white overflow-hidden"
                     >
                         <img
                             className="w-full h-52 object-cover"
-                            src={pro.image}
-                            alt={pro.title}
+                            src={product.image}
+                            alt={product.title}
                         />
 
                         <div className="p-4 mb-5">
                             <div className="flex justify-between">
-                                <h2 className="text-lg font-semibold">{pro.title}</h2>
+                                <h2 className="text-lg font-semibold">{product.title}</h2>
                                 <div className="flex items-center gap-1 mt-1">
-                                    {renderStars(pro.rating)}
+                                    {renderStars(product.rating)}
                                     <span className="text-sm text-gray-600 ml-1">
-                                        {pro.rating}
+                                        {product.rating.toFixed(1)}
                                     </span>
                                 </div>
 
                             </div>
-                            <p className="text-gray-800 font-bold mt-1">{pro.price}</p>
+                            <p className="text-gray-800 font-bold mt-1">{product.price}</p>
                         </div>
 
                         <div className="flex justify-between text-sm text-gray-600 px-4 pb-3">
                             <p className="flex items-center gap-1">
-                                <FaTruck /> {pro.delivery}
+                                <FaTruck /> {product.delivery}
                             </p>
                             <p className="flex items-center gap-1">
-                                <FaLocationDot /> {pro.distance}
+                                <FaLocationDot /> {product.distance}
                             </p>
                         </div>
 
