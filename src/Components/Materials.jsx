@@ -85,7 +85,7 @@ export default function Materials() {
                                 <div className="flex items-center gap-1 mt-1">
                                     {renderStars(pro.rating)}
                                     <span className="text-sm text-gray-600 ml-1">
-                                        {pro.rating.toFixed(1)}
+                                        {pro.rating}
                                     </span>
                                 </div>
 

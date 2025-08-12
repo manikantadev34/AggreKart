@@ -9,7 +9,7 @@ function Home() {
                     Marketplace for <br />
                     Construction Materials
                 </h1>
-                <p className="text-gray-200 mt-4 text-lg">
+                <p className="text-white mt-4 text-lg">
                     Connect with trusted suppliers. Buy smarter, build faster.
                 </p>
                 <div className="mt-6 flex gap-4">
