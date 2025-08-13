@@ -14,12 +14,12 @@ function NavBar() {
                 <a href="#" className="text-black-600 hover:text-blue-600 transition">Contact</a>
             </div>
             <div className="flex items-center gap-2">
-                <select className="rounded-full bg-green-500 hover:bg-green-600 px-6 py-1.5 m-2 text-white">
-                    <option>Buyer</option>
-                </select>
-                <select className="rounded-full bg-orange-400 hover:bg-amber-500 px-5 py-1.5 m-2 text-white ">
-                    <option>Supplier</option>
-                </select>
+                <button className="rounded-full bg-green-500 hover:bg-green-600 px-6 py-1.5 m-2 text-white cursor-pointer ">
+                    Buyer
+                </button>
+                <button className="rounded-full bg-orange-400 hover:bg-amber-500 px-5 py-1.5 m-2 text-white cursor-pointer ">
+                  Supplier
+                </button>
             </div>
         </nav>
     );
